@@ -10,6 +10,8 @@ function typeWriter(){
 }
 
 typeWriter();
-document.body.addEventListener("click", function(){
-    document.getElementById("music").play();
-});
+const music = document.getElementById("music");
+
+document.body.addEventListener("click", function () {
+    music.play();
+}, { once: true });
