@@ -15,3 +15,6 @@ const music = document.getElementById("music");
 document.body.addEventListener("click", function () {
     music.play();
 }, { once: true });
+setTimeout(() => {
+    alert("I love you a lot Ayenie ❤️");
+}, 12000);
