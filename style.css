@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffd1dc,#ff9eb5);
+    font-family: cursive;
+    overflow:hidden;
+}
+
+/* card */
+.card{
+    text-align:center;
+}
+
+/* cake */
+.cake{
+    width:150px;
+    height:90px;
+    background:#6b3e26;
+    border-radius:10px;
+    position:relative;
+    margin:auto;
+}
+
+/* icing */
+.cake::before{
+    content:'';
+    position:absolute;
+    top:-20px;
+    width:150px;
+    height:30px;
+    background:#fff;
+    border-radius:10px;
+}
+
+/* candle */
+.candle{
+    width:12px;
+    height:40px;
+    background:white;
+    position:absolute;
+    top:-60px;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:3px;
+}
+
+/* flame */
+.flame{
+    width:15px;
+    height:15px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:-18px;
+    left:50%;
+    transform:translateX(-50%);
+    animation:flicker 0.2s infinite alternate;
+}
+
+@keyframes flicker{
+    from{ transform:translateX(-50%) scale(1);}
+    to{ transform:translateX(-50%) scale(1.3);}
+}
+
+/* text */
+h1{
+    margin-top:40px;
+    font-size:40px;
+    color:#c2185b;
+    text-shadow:2px 2px 6px white;
+}
